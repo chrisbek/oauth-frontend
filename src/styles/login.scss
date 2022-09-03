@@ -1,0 +1,74 @@
+.container {
+    //border: red solid;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-rows: 1fr 1.4fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". form ."
+    ". . .";
+}
+
+.loginForm {
+    border-radius: 6px;
+    background-color: rgb(87, 119, 177);
+    grid-area: form;
+
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.6fr 0.5fr 0.2fr 0.5fr 0.6fr;
+    grid-template-areas: 
+    ". . ."
+    ". login ."
+    ". . ."
+    ". signup ."
+    ". error .";
+}
+
+.username{ 
+    background-color: #f0f0f0;
+    grid-area: username;
+}
+
+
+.password{ 
+    background-color: #f0f0f0;
+    grid-area: password;
+}
+
+
+.login{
+    border: #151518 solid;
+    background-color:rgb(74, 125, 219);
+    grid-area: login;
+    color: rgb(230, 234, 255);
+    font-weight: 600;
+    font-size: x-large;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.signup{
+    @extend .login;
+    grid-area: signup;
+}
+
+.error {
+    grid-area: error;
+    background-color: rgb(219, 74, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

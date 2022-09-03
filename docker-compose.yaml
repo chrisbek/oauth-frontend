@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  frontend:
+    build:
+      context: .
+    container_name: oauth_frontend
+    networks:
+      main-net:
+        ipv4_address: 172.30.1.1
+
+networks:
+  main-net:
+    external: true

@@ -1,0 +1,21 @@
+body {
+    background-image:
+        linear-gradient(
+            rgba(82, 154, 202, 0.45), 
+            rgba(61, 130, 177, 0.45), 
+        ),
+        url('../resources/images/background.png');
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.lela {
+    color: red;
+}
+
+.coffeeIcon {
+    height: 360px;
+    width: 360px;
+}
